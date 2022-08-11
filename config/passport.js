@@ -29,6 +29,7 @@ module.exports = function (passport) {
                     } else {
                         user = await User.create(newUser);
                         done(null, user);
+                        
                     }
                 } catch (err) {
                     console.error(err);
